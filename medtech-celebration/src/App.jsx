@@ -3,6 +3,7 @@ import Greeting from './components/Greeting'
 import PhotoPlaceholder from './components/PhotoPlaceholder'
 import PersonalPhoto from './components/PersonalPhoto'
 import Card from './components/Card'
+import photoImage from './assets/photo.jpeg'
 import './App.css'
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
         <section className="content-section">
           <h2 className="section-title">Personal Celebration</h2>
           <PersonalPhoto 
-            imageSrc="/photo.jpeg"
+            imageSrc={photoImage}
             message="I am proud of her"
             name="Medical Technology Excellence"
             description="Recognizing outstanding achievements in advancing healthcare through innovation"

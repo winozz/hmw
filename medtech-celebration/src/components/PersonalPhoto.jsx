@@ -23,6 +23,8 @@ const PersonalPhoto = ({
 
   const handleImageError = (e) => {
     console.error('Image failed to load:', e.target.src);
+    console.error('Base URL:', import.meta.env.BASE_URL);
+    console.error('Environment:', import.meta.env.MODE);
     setImageError(true);
     setIsLoading(false);
   };
