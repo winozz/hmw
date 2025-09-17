@@ -32,12 +32,12 @@ function App() {
         />
         
         <section className="content-section">
-          <h2 className="section-title">Personal Celebration</h2>
+          <h2 className="section-title">Personal Message</h2>
           <PersonalPhoto 
             imageSrc={photoImage}
-            message="I am proud of her"
-            name="Medical Technology Excellence"
-            description="Recognizing outstanding achievements in advancing healthcare through innovation"
+            message="I am proud of you, Mahal"
+            name="Outstanding Achievement"
+            description="A heartfelt celebration of dedication and excellence"
             width="500px"
             height="375px"
           />

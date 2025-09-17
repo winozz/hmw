@@ -76,9 +76,9 @@ const PersonalPhoto = ({
               />
               {imageLoaded && (
                 <div className="personal-photo__overlay">
-                  <div className="personal-photo__celebration">
-                    <span className="celebration-icon">★</span>
-                    <span className="celebration-text">Medtech Excellence</span>
+                  <div className="personal-photo__heart">
+                    <span className="heart-icon">💝</span>
+                    <span className="heart-text">With Pride</span>
                   </div>
                 </div>
               )}
@@ -101,8 +101,8 @@ const PersonalPhoto = ({
                 Please check the file path and format
               </p>
               <div className="personal-photo__celebration">
-                <span className="celebration-icon">★</span>
-                <span className="celebration-text">Medtech Excellence</span>
+                <span className="celebration-icon">💝</span>
+                <span className="celebration-text">With Pride</span>
               </div>
             </div>
           )}
@@ -110,9 +110,6 @@ const PersonalPhoto = ({
         
         <div className="personal-photo__footer">
           <p className="personal-photo__description">{description}</p>
-          <div className="personal-photo__badge">
-            <span className="badge-text">Medical Technology Week 2025</span>
-          </div>
         </div>
       </Card>
     </div>
