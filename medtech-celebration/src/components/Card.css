@@ -1,0 +1,61 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.card--hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Variants */
+.card--default {
+  background: white;
+}
+
+.card--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.card--secondary {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.card--accent {
+  background: white;
+  border: 2px solid #667eea;
+}
+
+/* Padding variants */
+.card--padding-small {
+  padding: 1rem;
+}
+
+.card--padding-medium {
+  padding: 1.5rem;
+}
+
+.card--padding-large {
+  padding: 2rem;
+}
+
+.card--padding-none {
+  padding: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card--padding-large {
+    padding: 1.5rem;
+  }
+  
+  .card--padding-medium {
+    padding: 1rem;
+  }
+}

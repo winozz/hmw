@@ -1,0 +1,138 @@
+.greeting {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.greeting__header {
+  margin-bottom: 2rem;
+}
+
+.greeting__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.greeting__subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.9;
+  color: white;
+}
+
+.greeting__message {
+  margin: 2rem 0;
+}
+
+.greeting__welcome {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+  color: white;
+}
+
+.greeting__name {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.greeting__description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.greeting__highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.highlight-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.highlight-item__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.highlight-item__description {
+  font-size: 0.875rem;
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.4;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .greeting {
+    margin: 0.5rem;
+  }
+  
+  .greeting__title {
+    font-size: 2rem;
+  }
+  
+  .greeting__subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .greeting__highlights {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .highlight-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting__title {
+    font-size: 1.7rem;
+  }
+  
+  .greeting__welcome {
+    font-size: 1.3rem;
+  }
+  
+  .greeting__highlights {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .highlight-item {
+    padding: 1rem;
+  }
+  
+  .highlight-item__title {
+    font-size: 0.9rem;
+  }
+  
+  .highlight-item__description {
+    font-size: 0.8rem;
+  }
+}
